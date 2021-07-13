@@ -1,5 +1,6 @@
 import MainGrid from '../src/components/MainGrid';
 import Box from '../src/components/Box';
+import { AluraKutMenu } from '../src/lib/aluraKutCommons';
 
 function ProfileSideBar(properties) {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
   const user = 'wyltamar';
   //prettier-ignore
   return (
+  <>  
+  <AluraKutMenu/>
   <MainGrid>
     <div  className="profileArea" style={{gridArea: "profileArea"}}>
       <ProfileSideBar propUser={user}/>
@@ -33,5 +36,6 @@ export default function Home() {
     </div>
 
   </MainGrid>
+  </>
   );
 }
