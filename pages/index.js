@@ -1,40 +1,32 @@
-import styled from 'styled-components';
+import MainGrid from '../src/components/MainGrid';
+import Box from '../src/components/Box';
 
-// const Title = styled.h1`
-//   font-size: 50px;
-//   color: ${({ theme }) => theme.colors.primary};
-// `;
+function ProfileSideBar(properties) {
+  return (
+    <Box>
+      <img
+        src={`https://github.com/${properties.propUser}.png`}
+        alt="Foto do Wyltamar"
+        style={{ borderRadios: '8px' }}
+      />
+    </Box>
+  );
+}
 
-const Box = styled.div`
-  background: #ffffff;
-  border-radius: 8px;
-`;
-
-const MainGrid = styled.main`
-  display: grid;
-  grid-gab: 10px;
-  padding: 16px;
-
-  @media (min-width: 860px) {
-    grid-template-area: 'profileArea welcomeArea profileRelationsArea';
-    grid-template-columns: 160px 1fr 312px;
-  }
-`;
 export default function Home() {
+  const user = 'wyltamar';
   //prettier-ignore
   return (
   <MainGrid>
-    <div style={{gridArea: "profileArea"}}>
-    <Box >
-    Imagem
-    </Box>
+    <div  className="profileArea" style={{gridArea: "profileArea"}}>
+      <ProfileSideBar propUser={user}/>
     </div>
-    <div style={{gridArea: "welcomeArea"}}>
+    <div className="welcomeArea" style={{gridArea: "welcomeArea"}}>
     <Box>
     Bem vindo
     </Box>
     </div>
-    <div style={{gridArea: "profileRelationsArea"}}>
+    <div className="profileRelacionsArea" style={{gridArea: "profileRelationsArea"}}>
     <Box >
     Pessoas da comunidade
     </Box>
