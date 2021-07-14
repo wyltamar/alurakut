@@ -2,7 +2,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { AlurakutStyles } from '../src/lib/AlurakutCommons';
 
 const GlobalStyle = createGlobalStyle`
-  body {
+
   /* Reset CSS (Necolas Reset CSS <3) */
   * {
     margin: 0;
@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#0070f3',
     primary: 'red',
   },
 };
