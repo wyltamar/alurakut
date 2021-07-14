@@ -527,4 +527,3 @@ export const AlurakutStyles = css`
   }
   ${AlurakutLoginScreen}
 `;
-s;

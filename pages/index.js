@@ -19,14 +19,14 @@ function ProfileSidebar(propriedades) {
 }
 
 export default function Home() {
-  const usuarioAleatorio = 'omariosouto';
+  const usuarioAleatorio = 'wyltamar';
   const pessoasFavoritas = [
-    'juunegreiros',
-    'omariosouto',
+    'gustavofoa',
+    'recieire',
     'peas',
     'rafaballerini',
     'marcobrunodev',
-    'felipefialho',
+    'juunegreiros',
   ];
 
   //prettier-ignore
